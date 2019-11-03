@@ -82,7 +82,7 @@ lily-defaults prescribes that beams only connect notes that are within the same 
   \revertTimeSignatureSettings 4/4
 
   %% Allow, for example, beaming 3 eighth notes in 3/4 time
-  \set Timing.beamHalfMeasure = ##f
+  \set Timing.beamHalfMeasure = ##t
 }
 ```
 
