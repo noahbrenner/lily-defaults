@@ -20,7 +20,7 @@ $ cd /path/to/your/project/
 $ git remote add lily-defaults git@github.com:noahbrenner/lily-defaults.git
 $ git fetch lily-defaults
 $ git read-tree --prefix=lily-defaults/ -u lily-defaults/master
-$ git merge -m "Add lily-defaults subtree"
+$ git commit -m "Add lily-defaults subtree"
 ```
 
 If you later want to fetch updates to lily-defaults, here's one way to do that:
