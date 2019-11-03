@@ -94,7 +94,7 @@ Notably absent settings
 I don't frequently use the [point-and-click][] feature, but I don't believe a config file is the best place to disable it. I'd rather not have to change a file when the same thing can be done [from the command line][no-point-and-click]. Just run:
 
 ```bash
-lilypond -dno-point-and-click your-lilypond-file
+$ lilypond -dno-point-and-click your-lilypond-file
 ```
 
 I highly recommend using a Makefile for your LilyPond projects. Simply include this command line flag in your Makefile, and now you have both options available without making any changes to your project files.
