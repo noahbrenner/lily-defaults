@@ -3,7 +3,7 @@
 
 \version "2.18.2"
 
-#(define initial-value:relative-includes (ly:get-option 'relative-includes))
+#(define memo:relative-includes (ly:get-option 'relative-includes))
 #(ly:set-option 'relative-includes #t)
 
 \include "./core/arpeggios.ily"
@@ -15,4 +15,5 @@
 
 \include "./other/instrument-names--align-right.ily"
 
-#(ly:set-option 'relative-includes initial-value:relative-includes)
+#(ly:set-option 'relative-includes memo:relative-includes)
+#(module-remove! (current-module) 'memo:relative-includes)
